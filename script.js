@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("")
+    fetch("https://vishalbhardwaj.pythonanywhere.com/api/trends")
         .then(response => response.json())
         .then(data => {
             const ctx = document.getElementById("tagChart").getContext("2d");
